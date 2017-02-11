@@ -1,0 +1,36 @@
+{
+  "name": "owner",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "users"
+  },
+  "properties": {
+    "createdAt": {
+      "type": "date",
+      "required": true
+    },
+    "services": {
+      "type": "object"
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "profile": {
+      "type": "object"
+    },
+    "emails": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

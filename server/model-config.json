@@ -20,5 +20,9 @@
   "oil_action": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "owner": {
+    "dataSource": "mongodb",
+    "public": false
   }
 }

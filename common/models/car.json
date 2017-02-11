@@ -2,12 +2,12 @@
   "name": "car",
   "plural": "cars",
   "base": "PersistedModel",
-  "mongodb": {
-    "collection": "cars"
-  },
   "idInjection": true,
   "options": {
     "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "cars"
   },
   "properties": {
     "name": {
@@ -21,14 +21,16 @@
     "start_mileage": {
       "type": "number",
       "required": true
-    },
-    "owner": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "car_owner": {
+      "type": "belongsTo",
+      "model": "owner",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
