@@ -1,0 +1,64 @@
+{
+  "name": "oil_action",
+  "plural": "oil_actions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mongodb": {
+    "collection": "oil_actions"
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "volume": {
+      "type": "number",
+      "required": true
+    },
+    "old_mileage": {
+      "type": "number",
+      "required": true
+    },
+    "new_mileage": {
+      "type": "number",
+      "required": true
+    },
+    "partial": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "price_litre": {
+      "type": "number",
+      "required": true
+    },
+    "comment": {
+      "type": "string"
+    },
+    "consumption": {
+      "type": "number",
+      "required": false
+    },
+    "car": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "car": {
+      "type": "belongsTo",
+      "model": "car",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

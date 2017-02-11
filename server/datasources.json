@@ -1,0 +1,12 @@
+{
+  "mongodb": {
+    "host": "127.0.0.1",
+    "port": 3001,
+    "url": "mongodb://127.0.0.1:3001/meteor",
+    "database": "meteor",
+    "password": "",
+    "name": "mongodb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
