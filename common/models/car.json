@@ -24,13 +24,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "car_owner": {
-      "type": "belongsTo",
-      "model": "owner",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

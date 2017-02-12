@@ -48,13 +48,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "car_oil": {
-      "type": "belongsTo",
-      "model": "car",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

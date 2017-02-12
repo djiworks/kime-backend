@@ -23,6 +23,6 @@
   },
   "owner": {
     "dataSource": "mongodb",
-    "public": false
+    "public": true
   }
 }
